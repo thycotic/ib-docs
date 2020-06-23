@@ -1,6 +1,6 @@
 [title]: # (ADUC Extensions)
 [tags]: # (panel)
-[priority]: # (13)
+[priority]: # (3)
 # ADUC Extension
 
 The ID Bridge Extension provides a Thycotic Panel in both the User and Group Property modals of the  Active Directory Users and Computers (ADUC) MMC.
