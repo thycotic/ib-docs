@@ -11,6 +11,7 @@ This page describes the process and options for joining your *nix agent to an Ac
 
 Before being able to join you *nix host to a domain the following requirements will need to be met
 
+* For any of the Domains (Parent and Child included) you may wish to join, at least 1 of the Domain Controller must have the Active Directory Certificate Services installed.
 * DNS and routing must be correct
   * DNS record for agent
   * Agent must be able to resolve the domain and domain controller
@@ -22,7 +23,7 @@ Before being able to join you *nix host to a domain the following requirements w
 
 ## Overview
 
-In order for your *nix agent to Join an available Active directory domain you will need to run the pmagent --join command. This will contact an available dc within you domain and add your \*nix host as a computer object to that domain.
+In order for your *nix agent to Join an available Active directory domain you will need to run the `pmagent --join` command. This will contact an available dc within you domain and add your \*nix host as a computer object to that domain.
 
 You can perform the join solely from using command line arguments or through an interactive method where you will be prompted to provide the required details.
 
