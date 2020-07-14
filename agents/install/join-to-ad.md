@@ -11,7 +11,7 @@ This page describes the process and options for joining your *nix agent to an Ac
 
 Before being able to join you *nix host to a domain the following requirements will need to be met
 
-* For any of the Domains (Parent and Child included) you may wish to join, at least 1 of the Domain Controller must have the Active Directory Certificate Services installed.
+* For the Linux\Unix agents to be able to communicate with Active Directory the Domain Controllers will require LDAPS to be enabled.
 * DNS and routing must be correct
   * DNS record for agent
   * Agent must be able to resolve the domain and domain controller
@@ -31,6 +31,8 @@ As the Join process completes and the agent is registered, the join process will
 authentication to pass through to Active Directory. This option can be skipped if required.
 
 The command line also allows additional optional configuration options to be included in the Join, these will be details below.
+
+As the join completes the system authentication files will also be configured to allow authentication of Active Directory users
 
 ## Existing Computer objects
 
