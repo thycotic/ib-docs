@@ -13,7 +13,7 @@ Root access or a user with root sudo permissions.
 
 Once your Thycotic Identity bridge agent has been joined to Active Directory there are a number of other commands that you can utilise in conjunction with the __--bridge__ option and these are identified below
 
-### --syscfg <config|unconfig|path>
+### --syscfg <config|unconfig|uninstall|path>
 
 Allows you to configure/unconfigure the hosts native authentication files for the Thycotic system configuration files to authenticate against your Active Directory Domain.
 
@@ -30,11 +30,32 @@ Files currently modified by __--syscfg__:
 * /etc/ssh/ssh_config
 * /etc/ssh/sshd_config
 
+If password-auth, passwd or nsswitch.conf are found to be missing during a --syscfg config the process will be aborted and the user informed that a required system file is missing. ssh_config and sshd_config are not required files.
+If missing during a --syscfg unconfig\uninstall the process will continue and modify\replace any files still available.
+
+The uninstall option will instead of modifying the existing system file simply use the .thyorig backups created when create was run and reset the system files to how they were originally.
+
+The unconfig will modify the existing files creating a .thybak backup first.
+
+In the event the .thyorig files are missing the agent will fallback to performing a modifying the existing files.
+
 ### --stats
 
 Provides on screen feedback of the status of the agent, including Process Id and currently active AD instance.
 
 Useful commands to check under which OU the agent is defined and running.
+
+### --testuser <username>
+
+Performs and Active Directory check of the user status against the agent. 
+
+The following statuses can be returned:
+
+* Access Allowed
+* Account Disabled
+* Account Expired
+* Account Locked
+* Thycotic ACL denied access and User doesn't exist
 
 ### --leave [<domain>]
 
@@ -58,12 +79,13 @@ Delete can be completed solely through command line input or interactively. Inte
 
 Optional: `--nosysuncfg` stops the removal of the Thycotic system configuration files.
 
-### --purge
+### --purge [--user...]
+
+* `--purge [--user...][--group...]` view cahce data
+* `.. [--user|--user="<wildcard>"]` specify user cache data
+* `.. [--group|--group="<wildcard>"]` specify group cache data
 
 Purge allows the deletion of the locally cached data stored on the agent. The purge can remove all user and group cached information or be filtered to down to individual user and group level.
-
-* `[--user "<wildcard>"]` specify cache data by user wildcard
-* `[--group "<wildcard>"]` specify cache data by group wildcard
 
 The purge will only remove the locally cached information regarding users and groups on that Agent. The cached information is used to reduce user/group look up times in Active Directory and provide authentication in the event the Domain is unavailable.
 
@@ -71,10 +93,12 @@ The default of --purge will delete all information.  You may use * wildcard matc
 
 ### --cache
 
-Displays the cached information for the agent, users and groups. The cache can be displayed for all 3 categories or filtered to down to individual user and group level.
+* `--cache [--user...][--group...][--agent]` view cache data
+* `... [--user|--user="<wildcard>"]` specify user cache data
+* `... [--group|--group="<wildcard>"]` specify group cache data
+* `... [--agent]` select agent cache data
 
-* `[--user "<wildcard>"]` specify cache data by user wildcard
-* `[--group "<wildcard>"]` specify cache data by group wildcard
+Displays the cached information for the agent, users and groups. The cache can be displayed for all 3 categories or filtered to down to individual user and group level.
 
 The cached information is used to reduce user/group look up times in Active Directory and provide authentication in the event the Domain is unavailable. 
 
@@ -86,7 +110,7 @@ The default of --cache will display all information.  You may use * wildcard mat
 
 ### Syscfg
 
-`--bridge --syscfg /root/thycotic/corp-config.json`
+`pmagent --bridge --syscfg /root/thycotic/corp-config.json`
 
 Rather than using the default /opt/thycotic/scripts/ to configure or unconfigure the authentication system files, the agent will call /root/thycotic/corp-config.json
 
@@ -110,6 +134,17 @@ Computer name: AGENT1
 OU: CN=Computers,DC=Demo,DC=com
 ```
 
+### Testuser
+
+`pmagent --bridge --testuser user1`
+
+Example output if account expired:
+
+```
+User user1 denied access to AGENT1
+Reason: User account user1 has expired in Active Directory
+```
+
 ### Leave
 
 `pmagent --bridge --leave --nosysuncfg`
@@ -131,9 +166,9 @@ You will be prompted interactively to complete the deletion process.
 1. Enter *Administrator*\@Demo's password:  
 1. Successful.
 
-### Cache
+### Cache - Default
 
-`pmagent --bridge --cache --user [Tt]est\*`
+`pmagent --bridge --cache --user [Uu]ser\*`
 
 * Using both Character casing and wildcard matching
 * Following the successful authentication of an AD user to your *nix host you can recall the cached information for that user.
@@ -142,80 +177,79 @@ Example output:
 
 ```
 {
-    "users": [
-    {
-        "usid": "S-1-5-21-4211583412-2907095826-1833522802-3360",
-        "name": "test1",
-        "sam": "DEMO/test1",
-        "principal": "test1\@DEMO.COM",
-        "linked": 0,
-        "uid": 336001,
-        "gid": 513,
-        "gecos": "",
-        "home": "{target home root}/DEMO/test1",
-        "shell": "/bin/bash",
-        "lastUp": 1592387573,
-        "expires": 159663333,
-        "data": {
-            "userName": "test1",
-            "userPrincipalName": "test1\@Demo.com",
-            "KerberosName": "test1\@Demo.com",
-            "unixLoginName": "test1",
-            "unixLoginShell": "/bin/bash",
-            "unixHomeDirectory": "{target home root}/DEMO/test1",
-            "uidNumber": 336001,
-            "gidNumber": 513,
-            "sid": "S-1-5-21-4211583412-2907095826-1833522802-3360",
-            "gecos": null,
-            "groupDescription": null,
-            "nETBIOSDomainName": "DEMO",
-            "forceHomeDirPermissions": false,
-            "syncLocalPassword": false,
-            "passThrough": false,
-            "linkedUser": false,
-            "accountExpires": 910692730085,
-            "passwordExpired": false,
-            "accountLocked": false,
-            "accountDisabled": false,
-            "accessDenied": false,
-            "groups": [
-                {
-                    "gidNumber": 667,
-                    "name": "group2",
-                    "altname": "group2",
-                    "description": null,
-                    "sid": "S-1-5-21-4211583412-2907095826-1833522802-3105"
-                },
-                {
-                    "gidNumber": 666,
-                    "name": "group1",
-                    "altname": "group1",
-                    "description": null,
-                    "sid": "S-1-5-21-4211583412-2907095826-1833522802-3104"
-                },
-                {
-                    "gidNumber": 513,
-                    "name": "DomainUsers",
-                    "altname": "DomainUsers",
-                    "description": "Alldomainusers",
-                    "sid": "S-1-5-21-4211583412-2907095826-1833522802-513"
-                }
-            ]
-        },
-        "groups": [
-            "DomainUsers",
-            "group1",
-            "group2"
-            ]
-        }
-    ]
-}
+"Users:
+    Names: user1, user1, DEMO/user1, user1@DEMO.COM
+    SID: S-1-5-21-4211583412-2907095826-1833522802-3465
+    uid: 446501, gid: 513
+    groups: Domain^Users
 ```
 
+### Cache - Full
+
+Using both Character casing and wildcard matching.
+
+Following the successful authentication of an AD user to your *nix host you can recall the cached information for that user.
+
+```
+{
+  "users": [
+    {
+      "usid": "S-1-5-21-4211583412-2907095826-1833522802-3465",
+      "name": "user1",
+      "adname": "user1",
+      "sam": "DEMO/user1",
+      "principal": "user1@DEMO.COM",
+      "linked": 0,
+      "uid": 446501,
+      "gid": 513,
+      "gecos": "user 1",
+      "home": "/home/DEMO/user1",
+      "shell": "/bin/bash",
+      "lastUp": 1594725372,
+      "expires": -1,
+      "data": {
+        "userName": "user1",
+        "userPrincipalName": "user1@Demo.com",
+        "KerberosName": "user1@Demo.com",
+        "unixLoginName": "user1",
+        "unixLoginShell": "/bin/bash",
+        "unixHomeDirectory": "/home/DEMO/user1",
+        "uidNumber": 446501,
+        "gidNumber": 513,
+        "sid": "S-1-5-21-4211583412-2907095826-1833522802-3465",
+        "gecos": "user 1",
+        "description": null,
+        "displayName": "user 1",
+        "groupDN": "CN=Domain Users,CN=Users,DC=Demo,DC=com",
+        "groupDescription": "All domain users",
+        "groupDisplayName": "Domain Users",
+        "nETBIOSDomainName": "DEMO",
+        "passThrough": false,
+        "linkedUser": false,
+        "accountExpires": 4294967295,
+        "passwordExpired": false,
+        "accountLocked": false,
+        "accountDisabled": false,
+        "accessDenied": false,
+        "message": "Welcome user1 to the Thycotic Universal Bridge on AGENT1",
+        "groups": [
+          {
+            "gidNumber": 513,
+            "name": "Domain^Users",
+            "altname": "Domain^Users",
+            "description": "All^domain^users",
+            "sid": "S-1-5-21-4211583412-2907095826-1833522802-513"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
 ### Purge
 
-`pmagent --bridge --purge`
-`pmagent --bridge --cache --user *`
+`pmagent --bridge --cache --user=[Uu]ser*`
+`pmagent --bridge --cache --user`
 
 * This will purge all cached user and group information from the agent
 * Follow a purge this is the output you would see from checking the user cache
