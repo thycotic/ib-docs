@@ -5,9 +5,11 @@
 
 ## Allow Login without ACL on Server
 
-If there is no ACL targeted on the Linux\\Unix agent, allow everyone to logon, or allow no one to logon. 
+If there is no ACL targeted on the Linux/Unix agent, allow everyone to logon, or allow no one to logon. 
 
 * Default should be: Allow everyone
+
+![exclude](../images/exclude.png "Excluded Users")
 
 ## Authentication Mode
 

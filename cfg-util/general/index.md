@@ -3,6 +3,8 @@
 [priority]: # (3)
 # The General Panel
 
+![general](../images/general.png "General tab of the Bridge Configuration tool")
+
 ## Default User Settings
 
 ### Starting UID

@@ -9,7 +9,11 @@ If the Access Control List is empty All users are granted allow permissions.
 
 For best practice a group should contain both user and computer objects, to create an effective Access Control List.
 
+![acl](../images/acl.png "Access Control List tab of the Bridge Configuration tool")
+
 ## Accounts
+
+![acl](../images/acl-2.png "Access Control List tab showing users and groups")
 
 ### Add Groups
 

@@ -5,6 +5,8 @@
 
 The Thycotic panels under user properties of ADUC allows you to manage the ID Bridge components related to Linux/Unix user attributes.
 
+![user data](images/user-data.png "Thycotic User Data tab in MMC")
+
 ## UID Number
 
 * This is the unique user id number to both the active directory forest and each AD user account for accessing Linux/Unix agents.
@@ -15,6 +17,8 @@ The Thycotic panels under user properties of ADUC allows you to manage the ID Br
 * UID’s will not be re-used
 * The generated UID value will be greater than the Starting UID defined in the ID Bridge Configuration utility
 * If the User has a UID Number the generate button will not create a new UID
+
+![generate](images/generate.png "User Data tab - Generate User")
 
 ## Algorithmic/Incremental drop-down
 
@@ -65,3 +69,9 @@ The Thycotic panels under user properties of ADUC allows you to manage the ID Br
 ## Sync local password (Linked accounts only)
 
 * If the user has a local Linux/Unix account with a stored password, it will sync the password across from AD to the local store in the event the agent ever falls back to local authentication methods.
+
+## User Mapping
+
+![user map](images/user-map.png "Thycotic User Mapping tab in MMC")
+
+![user map 2](images/user-map-2.png "Thycotic Computer Mapping tab in OS Properties")
