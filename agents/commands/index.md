@@ -57,6 +57,12 @@ The following statuses can be returned:
 * Account Locked
 * Thycotic ACL denied access and User doesn't exist
 
+### --acl [--verbose]
+
+Displays the Access Control List for the Agent. Displays a list of Active Directory user that are able to access the Agent in accordance with the Thycotic ACL policy defined in the Configuration Utility.
+
+Optional: --verbose will display the users assigned to a Group in the ACL list.
+
 ### --leave [<domain>]
 
 Leaves the Active Directory domain, although leaving the computer object in Active Directory. As the leave process completes the --syscfg uncfg will be run, reverting the host back to its original authentication configuration and removing the Thycotic system configuration files.
@@ -143,6 +149,54 @@ Example output if account expired:
 ```
 User user1 denied access to AGENT1
 Reason: User account user1 has expired in Active Directory
+```
+
+### ACL
+
+`pmagent --bridge --acl`
+
+```
+The following Active Directory users / groups are allowed to login to this host
+
+USERS
+=====
+
+[Username]     [Unix Username]   [User Principal Name]              [Display Name]
+user10         user10            user10@Demo.com                    user^10
+user11         aduser11          user11@Demo.com                    user^11
+
+
+GROUPS
+======
+
+[Group Name]        [Alt Group Name]    [Description]
+Linux^Admins        Linux^Admins
+```
+
+### ACL - Verbose
+
+`pmagent --bridge --acl --verbose`
+
+```
+The following Active Directory users / groups are allowed to login to this host
+
+USERS
+=====
+
+[Username]     [Unix Username]   [User Principal Name]              [Display Name]
+user10         user10            user10@Demo.com                    user^10
+user11         aduser11          user11@Demo.com                    user^11
+
+
+GROUPS
+======
+
+[Group Name]   [Username]     [Unix Username]   [User Principal Name]              [Display Name]
+Linux^Admins
+               user11         aduser11          user11@Demo.com                    user^11
+               user12         linux12           user12@Demo.com                    user^12
+               user14         aduser14          user14@Demo.com                    user^14
+               USer15         USer15            USer15@Demo.com                    USer^15
 ```
 
 ### Leave
