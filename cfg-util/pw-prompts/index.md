@@ -5,6 +5,8 @@
 
 The prompt that will be displayed to the user on the Linux/Unix host during login.
 
+![pwp](../images/pwp.png "Messages tab in Configuration tool")
+
 ## Local
 
 Password prompt message displayed to users logging onto a Linux/Unix host with a locally defined account only

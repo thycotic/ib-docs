@@ -7,6 +7,8 @@ Provide the ability to directly map existing Active Directory fields to Thycotic
 
 We provide the ability to map attributes in the event a customer is leveraging a third party product in the AD environment that is already leveraging that value.
 
+![attribute](../images/attr-map.png "Attribute Mapping tab of the Bridge Configuration tool")
+
 ## UID Number
 
 The UID Number assigned to the Active Directory user

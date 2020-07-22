@@ -5,6 +5,8 @@
 
 The Thycotic panels under group properties of ADUC allows you to manage the ID Bridge components related to Linux/Unix user attributes
 
+![group data](images/group-data.png "Thycotic group Data tab in Server ACL Properties")
+
 ## GID Number
 
 * This is the unique group id number assigned to each AD group account, which is assigned to a user account for accessing Linux/Unix agents.
