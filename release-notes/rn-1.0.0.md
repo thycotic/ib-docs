@@ -31,8 +31,18 @@ Thycotic Identity Bridge provides centralized authentication and authorization f
   * Cache Management
   * Agent Stats
 
+## Limitations
+
+* Root will always have SU access to user accounts.
+* Standard ftp (vsftp) doesn’t display the Windows Messages.
+* Root will not have permission to change Active Directory users passwords via the passwd command.
+* When AD Accounts disabled, telnet and su display an additional message stating “User account has expired”. Unfortunately Thycotic is unable to control these additional messages.
+* If a an Active Directory Username or Alias matches a Local Agent Username, the login will be blocked, with the exception of of root SU.
+* If an Active Directory users UID Number matches a Local Agents users UID, the Active Directory user will be blocked. The Local Agents user will be granted access.
+
 ## Known Issues
 
 * A reboot will be required after the Agent joining the Domain to allow AD users to login via Gnome desktop.
 * Logging into an Agent with cached credentials can only accept the case of the username as defined in Active Directory.
 * SSH logins drop-back to a local login attempt following 3 failed Active Directory attempts.
+* Chsh command is not currently supported for Active Directory users, if you are required to change the shell for an Active Directory user, please use the Thycotic User Data panel in ADUC.
