@@ -1,11 +1,19 @@
-[title]: # (Users)
-[tags]: # (panel)
-[priority]: # (13)
-# Users - Thycotic Panel
+[title]: # (User Data)
+[tags]: # (mmc)
+[priority]: # (4)
+# Thycotic User Data
 
 The Thycotic panels under user properties of ADUC allows you to manage the ID Bridge components related to Linux/Unix user attributes.
 
 ![user data](images/user-data.png "Thycotic User Data tab in MMC")
+
+## Auto Generated
+
+When the POSIX Data for the Users & Groups field in the Thycotic Configuration Utility is set to Automatic the user fields will be displayed with Auto Generated, meaning when the user accesses a Linux/Unix host the fields will automatically be generated.
+
+Mousing over the fields will display the parameters that have been assigned to that field.
+
+These fields can be manually overridden and will display as such once saved.
 
 ## UID Number
 
@@ -20,42 +28,31 @@ The Thycotic panels under user properties of ADUC allows you to manage the ID Br
 
 ![generate](images/generate.png "User Data tab - Generate User")
 
-## Algorithmic/Incremental drop-down
+## Primary Group
 
-* selects the method applied to creating the UID Number
-* Algorithmic - algorithm based UID generation
-* Incremental - Add ones to the last allocated UID
-* If the generator mode has been locked (via the configuration utility), this drop down will only contain the locked generator mode
+Opens the AD Group Modal to search and select an AD group to be assigned as Primary Group for the user account.
+
+* Only one group can be selected and assigned at a time.
+* If a group is selected that doesn’t have a Primary GID, you will be presented with the Thycotic GID generation modal.
 
 ## Primary GID
 
 * The GID number of the Primary group assigned to the user
 
-## Group - button
-
-* Opens the AD Group Modal to search and select an AD group to be assigned as Primary Group for the user account
-* Only one group can be selected and assigned at a time
-* If a group is selected that doesn’t have a Primary GID, you will be presented with the Thycotic GID generation modal
-
 ## Home Directory
 
-* Defines the home location of the user when they log into the Linux/Unix agent
-* This is normally their landing folder
-* Default value will normally be: `{target home root}/*<domain>*/*<username>*`
-* This can be modified on a per user basis, although takes the base values from the definition in the ID Bridge Configuration utility
+* Defines the home location of the user when they log into the Linux/Unix agent.
+* This is normally their landing folder.
 
 ## Login Shell
 
-* Defines the Linux/Unix shell that will be assigned to that user on login
-* The default is /bin/bash
-* This can be modified
+* Defines the Linux/Unix shell that will be assigned to that user on login.
 
 ## Comment (GECOS)
 
 * Gecos is are short text fields in /etc/passwd of the Linux/Unix Agent that keeps the users real name
-* Field limit is defined in AD schema. Thus no limit will be enforced in the GUI. If limit is exceeded, data will fail to save and a message will be shown to the user. 
 
-## Unix Username (optional)
+<!--## Unix Username (optional)
 
 * This allows you to define a simplified username that AD users will be able to login to the Linux/Unix Servers with.
 * By default AD users would need to login with a format of <user1@domain1.com>, this fields allows you to define a username such as user1. then the login would become user1
@@ -75,3 +72,4 @@ The Thycotic panels under user properties of ADUC allows you to manage the ID Br
 ![user map](images/user-map.png "Thycotic User Mapping tab in MMC")
 
 ![user map 2](images/user-map-2.png "Thycotic Computer Mapping tab in OS Properties")
+-->

@@ -3,6 +3,8 @@
 [priority]: # (3)
 # The General Panel
 
+Default settings of values for User and Group attributes, including starting id’s, default home and shell parameters.
+
 ![general](../images/general.png "General tab of the Bridge Configuration tool")
 
 ## Default User Settings
@@ -11,99 +13,61 @@
 
 The base UID that should be taken as starting point for all uid assignments
 
-* Initial Starting UID: value should be 0
+* Default Starting UID: value should be 1000000
 * Only positive numeric characters can be set
 * A maximum of 9 numeric characters can be used
-* ADUC → User Properties → Thycotic  
-  * Generate button Should create a unique UID to the entire forest and higher than the Starting UID.
-  * Generate button should not create a UID of an existing UID
-  * Generate button should not create a UID lower than the Starting UID
-  * Generate button with Algorithmic selected
-    * Should generate a random number above the Starting UID value
-  * Generate button with Incremental selected
-    * Should generate a UID 1 higher than the previous one used
 
 ### Default Home Directory
 
-Setting of the path that should be used for users when logging into the Linux\Unix host
+Setting of the path that should be used for users when logging into the Linux/Unix host
 
-* Initial Default Home Directory should be set to: `[systemhome]/[domain]/[username]`
-* ADUC → User Properties → Thycotic
-  * Default value should be displayed as: `{target home root}*\<domain\>**\<username\>*`
-* Any Change made in Utility should be reflected in ADUC → User Properties → Thycotic
-* Help message should be present make sense
+* Default Home Directory set to: [systemhome]/[domain]/[username]
 
 ### Default Login Shell
 
-Define the shell you would like assigned to the user when logging into the Linux\Unix host
+Define the shell you would like assigned to the user when logging into the Linux/Unix host
 
-* Initial Default Login Shell should be set to: /bin/bash
-* ADUC → User Properties → Thycotic:
-  * Default value should be displayed as: /bin/bash
-* Any Change made in Utility should be reflected in ADUC → User Properties → Thycotic
-* Help message should be present make sense 
+* Initial Default Login Shell should be set to: `/bin/bash`
+
+### Primary Group Name
+
+The Active Directory Group that will be assigned as the Users Primary group when logging into Linux/Unix Host.
+
+* Default Primary Group Name: Not set by Default
+* Use the select option to activate the Active Directory Group Selection Modal
+
+### Primary Group Number
+
+Displays the Thycotic assigned GID value for the Active Directory Group assigned to the Primary Group Name.
+
+### Check All Domains
+
+This setting forces searches to halt if a domain being searched is offline If this setting is disabled, such domains will be ignored and the search will continue on available domains.
+
+* Check All Domains unchecked by Default
+
+### POSIX Data for Users & Groups
+
+Defines if all POSIX data to be defined by Active Directory before Users are able to login into the Linux/Unix Hosts.
+
+* Default POSIX Data for Users & Groups: Automatic
+* Automatic - If there is no POSIX date on the user in Active Directory (i.e. No UID/GID/Shell/Home Dir), then create the data for the user upon first logon to a Linux/Unix Host
+* Manual - POSIX data will need to be generated for each User and Group in ADUC before being able to access Linux/Unix Hostsic – Drop down should be present and can be changed
 
 ## Default Group Settings
 
 ### Starting GID
 
-The base GID that should be taken as starting point for all gid assignments
+The starting GID that will be taken as starting point for all gid assignments.
 
-* Initial Starting GID: value should be 0
+* Initial Starting GID: value should be 1000000
 * Only positive numeric characters can be set
 * A maximum of 9 numeric characters can be used
-* ADUC → User Properties → Thycotic:
-  * Select the Assign Group button → Search and Select a group that doesn’t have a Thycotic GID assigned, should now be prompted to Set a GID for Group
-    * Set GID button Should create a unique GID to the entire forest and higher than the Starting GID
-    * Set GID button should not create a GID of an existing GID
-    * Set GID button should not create a GID lower than the Starting GID
-    * Set GID button with Algorithmic selected
-      * Should generate a random number above the Starting GID value
-    * Set GID button with Incremental selected
-      * Should generate a GID 1 higher than the previous one used
-  * Group name and GID should then be displayed.
-* ADUC → Group Properties → Thycotic: 
-  * Generate button Should create a GID Number higher than the Starting GID
-  * Generate button should not create a GID of an existing GID
-  * Generate button should not create a GID lower than the Starting GID
-  * Generate button with Algorithmic selected
-    * Should generate a random number above the Starting GID value
-  * Generate button with Incremental selected
-    * Should generate a GID 1 higher than the previous one used
 
-### Primary Group name
+## Default Computer Settings
 
-Used to assign an existing AD group as the users primary group as Linux Account
+### Default Computer Container
 
-* Select the assign group button
-* Search and Select a group that does not have a Thycotic GID assigned, should now be prompted to Set a GID for Group
-  * Set GID button Should create a GID Number higher than the Starting GID
-  * Set GID button should not create a GID of an existing GID
-  * Set GID button should not create a GID lower than the Starting GID
-  * Set GID button with Algorithmic selected
-    * Should generate a random number above the Starting GID value
-  * Set GID button with Incremental selected
-    * Should generate a GID 1 higher than the previous one used
-* Group name and GID should then be displayed.
-* Pick another – allows you to pick another group
-* If a Group has a GID already assigned, group should be picked and be returned to Utility
-* Should not be able to assign more than one group as Primary Group name
+Defines the default OU container that Linux\Unix Hosts joining the Active Domain will be placed in.
 
-## UID Generation Mode
-
-Defines the format in which the UID and GID will be generate starting from the defined Starting ID values
-
-* Incremental – Will select the next ID available ID for user or group starting from the defined id
-  * If a value has been previously assigned and removed it will not be added back to the available pool
-* Algorithmic – Will randomly generate an available ID for user or group excluding the defined starting ID or lower
-  * If a value has been previously assigned and removed it will not be added back to the available pool
-* Utility → Primary Group Name → Assign group with no id – will open the assign GID modal
-* ADUC → Group Properties → Thycotic – Drop down should be present and can be changed
-* ADUC → User Properties → Thycotic – Drop down should be present and can be changed
-
-## Lock Generator Mode
-
-Stops users from being able to change the Generation mode in ADUC.
-
-* ADUC → Group Properties → Thycotic – Drop down should be present
-* ADUC → User Properties → Thycotic – Drop down should be present
+* Default Computer Container should be set to: CN=Computers

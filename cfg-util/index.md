@@ -3,19 +3,23 @@
 [priority]: # (2)
 # Identity Bridge Configuration Utility
 
-Below are all panels that appear under the ID Bridge Configuration Utility, each page outlines the functionality of the Panel
+The ID Bridge Configuration Utility allows the setting of values used in the Thycotic panels under Active Directory User and Computers and User and Group Properties.
+
+These values are used to enable the ID Bridge to manage the user authentication from Linux/Unix hosts to Active directory.
+
+The ID Bridge Configuration Utility will allow Global setting of all values and selected values at an OU level.Below are all panels that appear under the ID Bridge Configuration Utility, each page outlines the functionality of the Panel
 
 ## General
 
-Default settings of values for User and Group attributes, including starting Id’s, default home and shell parameters.
+Default settings of values for User, Group, and OU attributes, including starting Id’s, default home and shell parameters.
 
-## Authentication
+## ACL (Access Control List)
 
-Defines ACL and User attribute requirements for authenticating against the Active Directory. Setting of Home directory permissions and syncing of local Linux\Unix passwords with Active Directory.
+Assign Active directory groups at a global level to allow or deny login access to your Linux/Unix hosts.
 
-## Password Prompts
+## Agent Settings
 
-Defines the Password prompt text the user will see for different access types on the Linux\Unix host.
+Defaults for setting agent specific values, including Cached Logins, time sync, home directory permissions, and character separators.
 
 ## Attribute Mapping
 
@@ -23,26 +27,41 @@ Allow Active directory values to be mapped to Thycotic ID Bridge fields. For exa
 
 ## Cache Settings
 
-Sets the amount of time the local Linux\Unix agent will store a copy of the users password within the agent. This is required in the event the Agent is unable to contact AD to verify the users credentials.
-
-<!--
-## Logging (Not implemented)
-
-Allow Thycotic actions to be logged under the Servers syslog functionality
-
-## License (Not implemented)
-
-Licensing Thycotic ID Bridge functionality - to be defined
-
-## *nix Hosts (Not implemented)
-
-Allows the definition of locally defined Linux\Unix accounts that will be allowed to bypass the ID Bridge authentication protocol. These might be users such as root
--->
+Sets the amount of time the local Linux/Unix agent will store a copy of the users password within the agent's encrypted database. This is required in the event the Agent is unable to contact AD to verify the users credentials.
 
 ## Customer Variables
 
-Allows the ID Bridge to use attributes from AD (and in the future results of scripts and Linux\Unix variables) in items that happen on the Linux\Unix host.
+Allows the ID Bridge user to configure the custom attribute macros for use within the Default User & Group Settings.
 
-## ACL (Access Control List)
+## Excluded Users
 
-Assign Active directory groups at a global level to allow or deny login access to your Linux\Unix hosts.
+Provide a list of local user accounts that will automatically bypass the Identity Bridge portion of the authentication stack.
+
+## License
+
+Licensing panel to view, add, and remove Thycotic ID Bridge licenses.
+
+## Logging
+
+Allows the Linux/Unix host to utilize SysLog functionality, either logging the agent information locally or to a defined remote SysLog server.
+
+## Messages
+
+Allows custom messages to be defined. The messages are displayed to user when accessing the Linux/Unix hosts.
+
+## OU Override
+
+Shows an overview of where all Thycotic Identity Bridge configuration objects are stored in Active Directory.
+
+<!-- ## Authentication
+
+Defines ACL and User attribute requirements for authenticating against the Active Directory. Setting of Home directory permissions and syncing of local Linux/Unix passwords with Active Directory. 
+
+## Password Prompts
+
+Defines the Password prompt text the user will see for different access types on the Linux/Unix host.
+
+## *nix Hosts (Not implemented)
+
+Allows the definition of locally defined Linux/Unix accounts that will be allowed to bypass the ID Bridge authentication protocol. These might be users such as root
+-->

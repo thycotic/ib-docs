@@ -1,6 +1,7 @@
 [title]: # (Authentication)
 [tags]: # (panel)
-[priority]: # (4)
+[priority]: # (3)
+[display]: # (none)
 # Authentication Panel
 
 ## Allow Login without ACL on Server

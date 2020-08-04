@@ -1,6 +1,6 @@
 [title]: # (Access Control List)
 [tags]: # (panel)
-[priority]: # (12)
+[priority]: # (3)
 # Access Control List
 
 Assign Active directory groups at a Global level to allow or deny login access to your Linux/Unix hosts.
@@ -11,38 +11,37 @@ For best practice a group should contain both user and computer objects, to crea
 
 ![acl](../images/acl.png "Access Control List tab of the Bridge Configuration tool")
 
-## Accounts
+## Global Access Control Settings
+
+### Allow logon when no ACL defined
+
+Allows all Active Directory users logon permissions to all registered Linux/Unix hosts
+
+* Default Allow logon when no ACL defined value: Enabled
+* Once an ACL is defined, this option will become disabled and all access is controlled through the ACL definitions
+
+## ACL
 
 ![acl](../images/acl-2.png "Access Control List tab showing users and groups")
 
-### Add Groups
+### Add Access Control Entry
 
-Opens the Active Directory Select Group modal and you can search and select
-groups to be added to the ACL List.
+Opens a modal to define User or User Group and Host or Host Group definitions for individual ACLs.
 
-* Only 1 group can be added at a time
-* A Group can only be added to the list once
+* An ACL must be unique combination
 
-### Accounts Grid
+### Filter
 
-* Account - Displays the Groups assigned to ACL
-* State - Allowed/Denied
-  * Allowed - Users within the assigned group will be allowed to login to the Linux/Unix agents running the Thycotic Universal Bridge
-  * Denied - Users within the assigned group will be denied login access to the Linux/Unix agents running the Thycotic Universal Bridge
-  * Denied will override when user assigned to multiple groups
-* Remove - Option to remove group from the ACL list
+Allows filtering of exiting ACLs defined in the display panel
 
-### Pre-Cache User Login Credentials
+### Panel
 
-* Waiting on clarification
-* May be delayed until V2
+Displays that ACL combinations of Users and Hosts defined at a Global level.
 
-### Display Error Message if Logon denied due to ACL
+* Once an ACL has been defined all access must abide by ACL rules
+* By default when an ACL is added permission for the ACL is enabled
+* Denied - When selected login access to the user host combination will be denied
 
-* If checked when users attempted to login with a denied group membership the defined message will be displayed
-* __Message field__
-  * Default value is blank
-  * Field can be modified
-  * Currently no character limit on any field. This is subject to change.
-  * Only Unicode characters can be set
-  * Should be displayed to user when access denied to Linux/Unix
+### Test Access of User/Computer
+
+Test utility provided by Thycotic that reports access of users to computers against the defined ACLs.
