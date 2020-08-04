@@ -1,7 +1,7 @@
 [title]: # (Attribute Mapping)
 [tags]: # (panel)
-[priority]: # (6)
-# Installation and Upgrades
+[priority]: # (3)
+# Attribute Mapping
 
 Provide the ability to directly map existing Active Directory fields to Thycotic ID Bridge fields.
 
@@ -43,12 +43,6 @@ The GID Number assigned to the Active Directory Group
 * Thycotic value
 * ADUC | User Properties | Thycotic | Comment (GECOS)
 
-## Unix User Password
-
-* Default value: unixUserPassword
-* Thycotic value
-* Not a visible mapping, internally store
-
 ## Unix Login Shell
 
 * Default value: loginShell
@@ -72,10 +66,3 @@ The GID Number assigned to the Active Directory Group
 * Default value: description
 * Thycotic value
 * ADUC → Group Properties → Thycotic → Description
-
-## Group Display Name
-------------------
-
-* Default value: displayName
-* AD value
-* ADUC → Group

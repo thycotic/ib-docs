@@ -35,10 +35,12 @@ Thycotic Identity Bridge provides centralized authentication and authorization f
 
 * Root will always have SU access to user accounts.
 * Standard ftp (vsftp) doesn’t display the Windows Messages.
-* Root will not have permission to change Active Directory users passwords via the passwd command.
+* Root will not have permission to change Active Directory users passwords via the `passwd` command.
 * When AD Accounts disabled, telnet and su display an additional message stating “User account has expired”. Unfortunately Thycotic is unable to control these additional messages.
 * If a an Active Directory Username or Alias matches a Local Agent Username, the login will be blocked, with the exception of of root SU.
 * If an Active Directory users UID Number matches a Local Agents users UID, the Active Directory user will be blocked. The Local Agents user will be granted access.
+* If the agent has a default hostname of `localhost.localdomain`, the pmagent service will not function as expected and will return an error. Updating the agent hostname post installation will require a re-initialization of the agent configuration using the `pmagent --init` command.
+* VNC and Remote Desktop will not be supported authentication methods for version 1 of Thycotic Identity Bridge. We recommend that these methods are disabled.
 
 ## Known Issues
 

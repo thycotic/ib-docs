@@ -1,9 +1,16 @@
 [title]: # (Customer Variables)
 [tags]: # (panel)
-[priority]: # (11)
+[priority]: # (3)
 # Customer Variables
 
-Allows Thycotic ID Bridge to use attributes from AD (and in the future results of scripts and Linux/Unix variables) in items that happen on the Linux/Unix host.  
+Use this tab to configure the custom attribute macros for use within the Default User & Group Settings. Please note that these settings are global to the entire enterprise.
 
-* At present the focus is on things like the home directory
-* Variables are related to how the agent fetches data
+![customer variables](../images/cust-var.png "Customer Variables tab of the Bridge Configuration tool")
+
+## Add Variable
+
+Adds a new line to the panel and allows you to define a Macro name and then select from a list of Active Directory attributes and define a single attribute mapping per Macro.
+
+## Defaults
+
+A number of predefined default Macros have been added by Thycotic, these are also used in the Messages panel.
