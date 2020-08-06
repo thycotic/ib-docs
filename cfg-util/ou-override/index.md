@@ -1,6 +1,6 @@
 [title]: # (OU Override)
 [tags]: # (panel)
-[priority]: # (3)
+[priority]: # (5)
 # OU Override
 
 Shows an overview of where all Thycotic Identity Bridge configuration objects are stored in Active Directory.

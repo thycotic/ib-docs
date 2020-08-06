@@ -1,6 +1,6 @@
 [title]: # (Excluded Users)
 [tags]: # (panel)
-[priority]: # (3)
+[priority]: # (4)
 # Excluded Users
 
 Allows to provide a list of local user accounts that will automatically bypass the Identity Bridge portion of the authentication stack.
