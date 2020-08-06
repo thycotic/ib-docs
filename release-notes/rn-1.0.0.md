@@ -33,6 +33,14 @@ Thycotic Identity Bridge provides centralized authentication and authorization f
 
 ## Limitations
 
+* If you are running the Thycotic Identity Bridge Configuration Utility on a Domain Controller, while being logged in as an account that is not the primary administrator for the Domain Controller, you will have to perform one of the following actions so that the Thycotic Identity Bridge Configuration Utility has the appropriate permissions to write configuration settings to Active Directory:
+
+  1. Use a specific user when attempting to connect to Active Directory in the Thycotic Identity Bridge Configuration Utility.
+  1. Log into the Domain Controller with the primary administrator account.
+  1. Run the Thycotic Identity Bridge Configuration Utility as Administrator.
+  1. Grant the user you are attempting to connect with explicit read/write permissions to the Configuration Partition of your domain.
+
+  This is due to a security feature implemented by Windows on Domain Controllers to enhance security."
 * Root will always have SU access to user accounts.
 * Standard ftp (vsftp) doesn’t display the Windows Messages.
 * Root will not have permission to change Active Directory users passwords via the `passwd` command.
