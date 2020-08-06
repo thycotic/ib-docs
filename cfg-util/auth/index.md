@@ -1,6 +1,6 @@
 [title]: # (Authentication)
 [tags]: # (panel)
-[priority]: # (3)
+[priority]: # (4)
 [display]: # (none)
 # Authentication Panel
 

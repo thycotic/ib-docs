@@ -1,6 +1,6 @@
 [title]: # (Messages)
 [tags]: # (panel)
-[priority]: # (3)
+[priority]: # (4)
 # Messages
 
 The prompt that will be displayed to the user on the Linux/Unix host during login.

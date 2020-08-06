@@ -64,13 +64,7 @@ Please start the pmagent service by running:
 
 /bin/systemctl start pmagent.service
 
-This installation can be used as an agent for the Thycotic Privilege Manager and/or an agent for the Thycotic Identity Bridge.
-
-If you are using this installation as a Thycotic Privilege Manager agent, you must now register this agent with the Thycotic Privilege Manager using the command:
-
-/opt/thycotic/sbin/pmagent --register <host:port> <install code>
-
-If you are using this installation as a Thycotic Identity Bridge agent, you need to join an Active Directory domain to start authenticating users using the command:
+You need to join an Active Directory domain to start authenticating users using the command:
 
 /opt/thycotic/sbin/pmagent --join
 
@@ -85,18 +79,13 @@ Performed as non root user with sudo permissions:
 
 ```bash
 Below is the expected output of a successful installation
-[sudo] password for installer:
 Loaded plugins: fastestmirror, langpacks
-Examining /root/Thycotic/pmagent-1.0.0.x86_64.rpm: pmagent-1.0.0-1.x86_64
-Marking /root/Thycotic/pmagent-1.0.0.x86_64.rpm to be installed
+Examining pmagent-1.0.0.x86_64.rpm: pmagent-1.0.0-1.x86_64
+Marking pmagent-1.0.0.x86_64.rpm to be installed
 Resolving Dependencies
 --> Running transaction check
 ---> Package pmagent.x86_64 0:1.0.0-1 will be installed
 --> Finished Dependency Resolution
-base/7/x86_64 | 3.6 kB 00:00:00
-extras/7/x86_64 | 2.9 kB 00:00:00
-updates/7/x86_64 | 2.9 kB 00:00:00
-updates/7/x86_64/primary_db | 2.1 MB 00:00:00
 
 Dependencies Resolved
 
@@ -107,13 +96,13 @@ Package         Arch         Version         Repository                  Size
 ==============================================================================
 Installing:
 
-pmagent         x86_64        1.0.0-1        /pmagent-1.0.0.x86_64       48 M
+pmagent         x86_64        1.0.0-1        /pmagent-1.0.0.x86_64       50 M
 
 Transaction Summary
 ==============================================================================
 Install 1 Package
-Total size: 48 M
-Installed size: 48 M
+Total size: 50 M
+Installed size: 50 M
 Is this ok [y/d/N]: y
 Downloading packages:
 Running transaction check
@@ -126,16 +115,10 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/pmagent.service
 Please start the pmagent service by running:
   /bin/systemctl start pmagent.service
 
-This installation can be used as an agent for the Thycotic Privilege Manager and/or an agent for the Thycotic Identity Bridge.
-
-If you are using this installation as a Thycotic Privilege Manager agent, you must now register this agent with the Thycotic Privilege Manager using the command:
-  /opt/thycotic/sbin/pmagent --register <host:port> <install code>
-
-If you are using this installation as a Thycotic Identity Bridge agent, you need to join an Active Directory domain to start authenticating users using the command:
+You need to join an Active Directory domain to start authenticating users using the command:
   /opt/thycotic/sbin/pmagent --join
 
-Please disable SELinux to allow the Identity Bridge to function properly
-  Verifying : pmagent-1.0.0-1.x86_64 1/1
+Verifying : pmagent-1.0.0-1.x86_64 1/1
 
 Installed:
 pmagent.x86_64 0:1.0.0-1

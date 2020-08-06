@@ -1,4 +1,4 @@
-[title]: # (OUs - Override)
+[title]: # (OUs)
 [tags]: # (mmc)
 [priority]: # (5)
 # Thycotic Overrides
