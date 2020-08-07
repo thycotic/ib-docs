@@ -1,6 +1,6 @@
-[title]: # (Installation/Upgrades)
+[title]: # (Installation and Upgrades)
 [tags]: # (setup)
-[priority]: # (1)
+[priority]: # (2)
 # Installation and Upgrades
 
 ## Prerequisites

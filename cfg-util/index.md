@@ -1,6 +1,6 @@
 [title]: # (Configuration Utility)
 [tags]: # (introduction)
-[priority]: # (2)
+[priority]: # (4)
 # Identity Bridge Configuration Utility
 
 The ID Bridge Configuration Utility allows the setting of values used in the Thycotic panels under Active Directory User and Computers and User and Group Properties.
