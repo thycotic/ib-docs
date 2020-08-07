@@ -19,6 +19,12 @@ Before being able to join you *nix host to a domain the following requirements w
 * Access to an Active Directory Account with permissions to add computer objects
 * SELinux to be disabled on the *nix host otherwise the authentication to Active directory will be impacted.
   * The Thycotic Agent installer will post a message if detected
+  * The Join command will also abort and provide a message if SElinux is detected:
+
+    ```
+    Please disable SELinux to allow the Identity Bridge to function properly
+    ```
+
 * Root access or a user with root sudo permissions
 
 ## Overview
