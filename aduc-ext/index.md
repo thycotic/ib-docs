@@ -1,6 +1,6 @@
 [title]: # (ADUC Extensions)
 [tags]: # (panel)
-[priority]: # (3)
+[priority]: # (5)
 # ADUC Extension
 
 The Thycotic Identity Bridge Extension provides Thycotic Panels in Active Directory Users and Computers (ADUC) MMC for a number of container types.

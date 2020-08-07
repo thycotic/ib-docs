@@ -1,6 +1,6 @@
 [title]: # (Commands)
 [tags]: # (panel)
-[priority]: # (10)
+[priority]: # (1)
 # Identity Bridge Commands
 
 ![commands](images/commands.png "Commands help output screen capture")

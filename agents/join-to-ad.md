@@ -1,6 +1,6 @@
 [title]: # (Join Agent to AD)
 [tags]: # (setup)
-[priority]: # (2)
+[priority]: # (4)
 # Joining *nix Agents to an Active Directory Domain
 
 ![cmds](images/cmds.png "Commands help output")
