@@ -1,6 +1,6 @@
 [title]: # (GlobalCommands)
 [tags]: # (panel)
-[priority]: # (2)
+[priority]: # (11)
 # Global Commands
 
 ![global](images/global-cmd.png "Global commands help output")
