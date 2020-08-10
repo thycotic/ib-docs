@@ -30,3 +30,7 @@ The agent should have a resolvable hostname set before installing the Thycotic I
 >**Note**:
 > * If installing from the bundled installer/bootstrapper (ThycoticIdentityBridge_x64_{version}.exe), the client prerequisites will automatically be installed.
 > * If installing the raw msi (ADBridge.Installer_x64_{version}.msi), the user will have to manually download and install the client prerequisites.
+
+### Windows 7
+
+If you install the Identity Bridge on a Windows 7 system, please refer to the following Microsoft KB: https://support.microsoft.com/en-us/help/2533623/microsoft-security-advisory-insecure-library-loading-could-allow-remot
