@@ -9,7 +9,7 @@ This page provides links to Thycotic Identity Bridge product software downloads.
 
 | OS | Flavor | Version | Product |
 | ----- | ----- | ----- | ----- |
-| Windows Management Tools | | refer to [System Requirements](install/index.md#windows__amp__active_directory_requirements) | [Thycotic Identity Bridge for Windows Package V1.0](https://tmsnuget.thycotic.com/software/IdBridge/ThycoticIdentityBridge_x64_v1.0.80.0.exe) |
+| Windows Management Tools | | refer to [System Requirements](index.md#windows__amp__active_directory_requirements) | [Thycotic Identity Bridge for Windows Package V1.0](https://tmsnuget.thycotic.com/software/IdBridge/ThycoticIdentityBridge_x64_v1.0.80.0.exe) |
 | | | | [Thycotic Identity Bridge Installer Only (No Dependencies) V1.0](https://tmsnuget.thycotic.com/software/IdBridge/ADBridge.Installer_x64_v1.0.80.0.msi) |
 | Linux | Redhat | 6.x | coming soon |
 | | | 7.x | [Thycotic Identity Bridge Linux Agent V1.0](https://tmsnuget.thycotic.com/software/IdBridge/pmagent_x86_64_v1.0.0.rpm) |
