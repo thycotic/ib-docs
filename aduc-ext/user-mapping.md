@@ -3,7 +3,7 @@
 [priority]: # (4)
 # Thycotic User Mapping
 
-User Mappings create an alternate username (logon alias) which can be used when accessing Unix/Unux hosts. You may have one global mapping that applies to all hosts and one mapping per specified host.
+User Mappings create an alternate username (logon alias) which can be used when accessing Linux/Unix hosts. You may have one global mapping that applies to all hosts and one mapping per specified host.
 
 ![user mapping](images/user-mapping.png "Thycotic User Mapping tab in MMC")
 
