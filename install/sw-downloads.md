@@ -23,8 +23,8 @@ This page provides links to Thycotic Identity Bridge product software downloads.
 | | | 20.x | coming soon |
 | | SuSE Enterprise | 12.x | coming soon |
 | | | 15.x | coming soon |
-| | Oracle EL LTS | 6.x | coming soon |
-| | | 7.x | coming soon |
+| | Oracle | 6.x | coming soon |
+| | | 7.x | [Thycotic Identity Bridge Linux Agent V1.0](https://tmsnuget.thycotic.com/software/IdBridge/pmagent_x86_64_v1.0.0.rpm) |
 | | | 8.x | coming soon |
 | Unix | AIX | 6.x | coming soon |
 | | | 7.x | coming soon |
