@@ -5,7 +5,7 @@
 
 _August 12th, 2020_:
 
-With this release, Thycotic is rolling out the __Identity Bride__ (Id Bridge) for CentOS 7 Active Directory integration support.
+With this release, Thycotic is rolling out the __Identity Bridge__ (ID Bridge) for CentOS 7 Active Directory integration support.
 
 Thycotic Identity Bridge provides centralized authentication and authorization for Unix and Linux systems. This enables organizations to validate that someone is who they say they are, so they can be granted access to the resources they need to perform their job. This software utilizes the organization’s existing directory service (e.g. Active Directory) to achieve consistency in identities across the enterprise regardless of platform and operating system. The ID Bridge simplifies access as users have one username and one password to remember. It also streamlines identity management as administrators have a single place to manage users, groups, and the systems they have access to.
 
