@@ -1,7 +1,15 @@
-[title]: # (Install on Ubuntu)
+[title]: # (Ubuntu)
 [tags]: # (setup)
 [priority]: # (6)
 # Installing on Ubuntu
+
+## Thycotic File Locations
+
+Core installation location: `/opt/thycotic`
+
+Other Thycotic file locations: `/lib/x86_64-linux-gnu/security`, `/lib/x86_64-linux-gnu/`, `/var/log`, `/etc`
+
+Other locations Thycotic agent will modify system files: `/etc`, `/etc/pam.d`, `/etc/ssh`
 
 There are 2 methods for installing packages, DPKG and APT, both methods are outlined below.
 
