@@ -13,19 +13,19 @@ This page provides links to Thycotic Identity Bridge product software downloads.
 | | | | [Thycotic Identity Bridge Installer Only (No Dependencies) V1.0.1](https://tmsnuget.thycotic.com/software/IdBridge/ADBridge.Installer_x64_v1.0.93.0.msi) |
 | Linux | Redhat | 6.x | coming soon |
 | | | 7.x | [Thycotic Identity Bridge Linux Agent V1.0.1](https://tmsnuget.thycotic.com/software/IdBridge/pmagent_x86_64_V1.0.1.rpm) |
-| | | 8.x | coming soon |
+| | | 8.x | [Thycotic Identity Bridge Linux Agent V1.0.1](https://tmsnuget.thycotic.com/software/IdBridge/pmagent_x86_64_V1.0.1.rpm) |
 | | CentOS | 6.x | coming soon |
 | | | 7.x | [Thycotic Identity Bridge Linux Agent V1.0.1](https://tmsnuget.thycotic.com/software/IdBridge/pmagent_x86_64_V1.0.1.rpm) |
 | | | 8.x | [Thycotic Identity Bridge Linux Agent V1.0.1](https://tmsnuget.thycotic.com/software/IdBridge/pmagent_x86_64_V1.0.1.rpm) |
 | | Ubuntu LTS | 14.x | coming soon |
 | | | 16.x | coming soon |
-| | | 18.04 | [Thycotic Identity Bridge Linux Agent V1.0.1](https://tmsnuget.thycotic.com/software/IdBridge/pmagent_x86_64_V1.0.1.rpm) |
-| | | 20.04 | [Thycotic Identity Bridge Linux Agent V1.0.1](https://tmsnuget.thycotic.com/software/IdBridge/pmagent_x86_64_V1.0.1.rpm) |
+| | | 18.04 | [Thycotic Identity Bridge Linux Agent V1.0.1](https://tmsnuget.thycotic.com/software/IdBridge/pmagent_x86_64_V1.0.1.dpkg) |
+| | | 20.04 | [Thycotic Identity Bridge Linux Agent V1.0.1](https://tmsnuget.thycotic.com/software/IdBridge/pmagent_x86_64_V1.0.1.dpkg) |
 | | SuSE Enterprise | 12.x | coming soon |
 | | | 15.x | coming soon |
 | | Oracle | 6.x | coming soon |
 | | | 7.x | [Thycotic Identity Bridge Linux Agent V1.0.1](https://tmsnuget.thycotic.com/software/IdBridge/pmagent_x86_64_V1.0.1.rpm) |
-| | | 8.x | coming soon |
+| | | 8.x | [Thycotic Identity Bridge Linux Agent V1.0.1](https://tmsnuget.thycotic.com/software/IdBridge/pmagent_x86_64_V1.0.1.rpm) |
 | Unix | AIX | 6.x | coming soon |
 | | | 7.x | coming soon |
 | | HP-UX | 11i v3 | coming soon |
