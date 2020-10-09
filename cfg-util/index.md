@@ -45,7 +45,7 @@ Licensing panel to view, add, and remove Thycotic ID Bridge licenses.
 
 Allows the Linux/Unix host to utilize SysLog functionality, either logging the agent information locally or to a defined remote SysLog server.
 
-## Messages
+## Custom Text
 
 Allows custom messages to be defined. The messages are displayed to user when accessing the Linux/Unix hosts.
 
@@ -53,15 +53,3 @@ Allows custom messages to be defined. The messages are displayed to user when ac
 
 Shows an overview of where all Thycotic Identity Bridge configuration objects are stored in Active Directory.
 
-<!-- ## Authentication
-
-Defines ACL and User attribute requirements for authenticating against the Active Directory. Setting of Home directory permissions and syncing of local Linux/Unix passwords with Active Directory. 
-
-## Password Prompts
-
-Defines the Password prompt text the user will see for different access types on the Linux/Unix host.
-
-## *nix Hosts (Not implemented)
-
-Allows the definition of locally defined Linux/Unix accounts that will be allowed to bypass the ID Bridge authentication protocol. These might be users such as root
--->
