@@ -19,3 +19,10 @@ _October 8th, 2020_:
 * Improved feedback to user when running an invalid custom json script for `syscfg` command.
 * AD User login appears to be defaulting as Failover login.
 * *nix Agents are now able to join Active Directory Domains when BASE enabled within the hosts /etc/openldap/ldap.conf file
+
+## Known Issues
+
+* For Ubuntu 18.04 and 20.04 Operating System installs from the Ubuntu-xx.xx-live-server.iso you will need to install the libjansson-dev package on the system before installing the Identity Bridge agent.
+This can be done using the following command:
+
+  `sudo apt-get install libjansson-dev`
