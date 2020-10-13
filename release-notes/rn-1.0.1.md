@@ -19,3 +19,24 @@ _October 8th, 2020_:
 * Improved feedback to user when running an invalid custom json script for `syscfg` command.
 * AD User login appears to be defaulting as Failover login.
 * *nix Agents are now able to join Active Directory Domains when BASE enabled within the hosts /etc/openldap/ldap.conf file
+
+## Known Issues
+
+* If you use the `iso` to install either Ubuntu 18.04 or 20.04 the pmagent package will install but fails to run with the following error:
+
+  ```
+  installer@ubuntu20-live:~/Thycotic$ sudo pmagent -v
+  pmagent: error while loading shared libraries: libjansson.so.4: cannot open shared object file: No such file or directory
+  ```
+
+  ISO's tested against:
+  * ubuntu-18.04-live-server-amd64.iso
+  * ubuntu-20.04.1-live-server-amd64.iso
+
+  The error does not happen with the desktop iso available.
+
+  __Workaround__:
+
+  Install the following package before installing the pmagent:
+
+  `sudo apt-get install libjansson-dev`
