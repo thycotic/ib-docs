@@ -22,21 +22,7 @@ _October 8th, 2020_:
 
 ## Known Issues
 
-* If you use the `iso` to install either Ubuntu 18.04 or 20.04 the pmagent package will install but fails to run with the following error:
-
-  ```
-  installer@ubuntu20-live:~/Thycotic$ sudo pmagent -v
-  pmagent: error while loading shared libraries: libjansson.so.4: cannot open shared object file: No such file or directory
-  ```
-
-  ISO's tested against:
-  * ubuntu-18.04-live-server-amd64.iso
-  * ubuntu-20.04.1-live-server-amd64.iso
-
-  The error does not happen with the desktop iso available.
-
-  __Workaround__:
-
-  Install the following package before installing the pmagent:
+* For Ubuntu 18.04 and 20.04 Operating System installs from the Ubuntu-xx.xx-live-server.iso you will need to install the libjansson-dev package on the system before installing the Identity Bridge agent.
+This can be done using the following command:
 
   `sudo apt-get install libjansson-dev`
