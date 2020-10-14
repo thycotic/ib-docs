@@ -20,21 +20,21 @@ Allows all Active Directory users logon permissions to all registered Linux/Unix
 * Default Allow logon when no ACL defined value: Enabled
 * Once an ACL is defined, this option will become disabled and all access is controlled through the ACL definitions
 
-## ACL
+### Access Control List
 
 ![acl](../images/acl-2.png "Access Control List tab showing users and groups")
 
-### Add Access Control Entry
+#### Add Access Control Entry
 
 Opens a modal to define User or User Group and Host or Host Group definitions for individual ACLs.
 
 * An ACL must be unique combination
 
-### Filter
+#### Filter
 
 Allows filtering of exiting ACLs defined in the display panel
 
-### Panel
+#### Panel
 
 Displays that ACL combinations of Users and Hosts defined at a Global level.
 
@@ -42,6 +42,6 @@ Displays that ACL combinations of Users and Hosts defined at a Global level.
 * By default when an ACL is added permission for the ACL is enabled
 * Denied - When selected login access to the user host combination will be denied
 
-### Test Access of User/Computer
+#### Test Access of User/Computer
 
 Test utility provided by Thycotic that reports access of users to computers against the defined ACLs.
