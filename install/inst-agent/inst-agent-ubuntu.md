@@ -3,6 +3,19 @@
 [priority]: # (6)
 # Installing on Ubuntu
 
+## Prerequisites
+
+If the Ubuntu operating system is installed from either
+
+* ubuntu-18.04-live-server-amd64.iso or
+* ubuntu-20.04.1-live-server-amd64.iso
+
+you will be required to update the operating system base files with the following command before installing the Identity Bridge agent.
+
+`sudo apt-get update`
+
+It is recommended that your base operating system is always running the latest vendor recommended patches.
+
 ## Thycotic File Locations
 
 Core installation location: `/opt/thycotic`
