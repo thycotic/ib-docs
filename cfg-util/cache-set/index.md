@@ -3,6 +3,8 @@
 [priority]: # (4)
 # Cache Setting
 
+Configures how the Thycotic Identity Bridge caches account information, values are sent down to the *nix Identity Bridge every 5 minutes or upon restart of the Agent.
+
 The Cache tab contains two values:
 
 * Agent Cache Expiry Time (days)
