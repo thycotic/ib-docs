@@ -3,7 +3,7 @@
 [priority]: # (30998)
 # 1.1.0 Release Notes
 
-_October 27th, 2020_:
+_November 24th, 2020_:
 
 ## Enhancements
 
@@ -26,3 +26,4 @@ Enhancements available with the 1.1.0 release of Identity Bridge.
 * Improved feedback to user when running an invalid custom json script for `syscfg` command.
 * AD User login appears to be defaulting as Failover login.
 * *nix Agents are now able to join Active Directory Domains when BASE enabled within the hosts /etc/openldap/ldap.conf file
+* Changes to the Thycotic Configuration Utility > Custom Text > Friendly Messages > Account Expired filed are now being correctly applied.
