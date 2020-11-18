@@ -28,16 +28,9 @@ These fields can be manually overridden and will display as such once saved.
 
 ![generate](images/generate.png "User Data tab - Generate User")
 
-## Primary Group
-
-Opens the AD Group Modal to search and select an AD group to be assigned as Primary Group for the user account.
-
-* Only one group can be selected and assigned at a time.
-* If a group is selected that doesn’t have a Primary GID, you will be presented with the Thycotic GID generation modal.
-
 ## Primary GID
 
-* The GID number of the Primary group assigned to the user
+The GID number of the Primary group assigned to the user under the Member of Panel of the User Properties.
 
 ## Home Directory
 
