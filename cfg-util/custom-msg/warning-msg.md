@@ -1,6 +1,6 @@
 [title]: # (Warning Messages)
 [tags]: # (panel)
-[priority]: # (7)
+[priority]: # (8)
 # Warning Messages
 
 Warning Messages message types can be customized via the Custom Text tab in the configuration utility.

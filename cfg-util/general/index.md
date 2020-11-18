@@ -1,6 +1,6 @@
 [title]: # (General)
 [tags]: # (panel)
-[priority]: # (3)
+[priority]: # (5)
 # The General Panel
 
 Default settings of values for User and Group attributes, including starting id’s, default home and shell parameters.

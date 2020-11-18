@@ -1,6 +1,6 @@
 [title]: # (Access Control Messages)
 [tags]: # (panel)
-[priority]: # (8)
+[priority]: # (9)
 # Access Control Messages
 
 Access Control Messages message types can be customized via the Custom Text tab in the configuration utility. These message can be displayed when running the ACL report command from the Linux/Unix agent.

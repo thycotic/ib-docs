@@ -1,6 +1,6 @@
 [title]: # (Cache Setting)
 [tags]: # (panel)
-[priority]: # (4)
+[priority]: # (6)
 # Cache Setting
 
 Configures how the Thycotic Identity Bridge caches account information, values are sent down to the *nix Identity Bridge every 5 minutes or upon restart of the Agent.

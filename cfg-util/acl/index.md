@@ -1,6 +1,6 @@
 [title]: # (Access Control List)
 [tags]: # (panel)
-[priority]: # (4)
+[priority]: # (6)
 # Access Control List
 
 Assign Active directory groups at a Global level to allow or deny login access to your Linux/Unix hosts.
