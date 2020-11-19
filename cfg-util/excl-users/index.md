@@ -36,15 +36,13 @@ Users will automatically bypass the Identity Bridge portion of the authenticatio
 
 UID value/range will be excluded as an applicable value as UID Number in the Thycotic User Data extension of ADUC.
 
-* UID numbers can be defined as a single value, comma separated list or range of values
-* Default: 0 - 500
+* UID numbers can be defined as a single value, comma separated list or range of values.
 
 ### GID(s) Number
 
 GID value/range will be excluded as an applicable value as UID Number in the Thycotic User Data, Thycotic Group Data and Thycotic Overrides extensions of ADUC.
 
-* GID numbers can be defined as a single value, comma separated list or range of values
-* Default: 0 - 500
+* GID numbers can be defined as a single value, comma separated list or range of values.
 
 ### Domain
 
