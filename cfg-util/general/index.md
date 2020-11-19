@@ -3,7 +3,7 @@
 [priority]: # (5)
 # The General Panel
 
-Default settings of values for User and Group attributes, including starting id’s, default home and shell parameters.
+Default settings of values for User and Group attributes, including starting ID’s, default home and shell parameters.
 
 ![general](../images/general.png "General tab of the Bridge Configuration tool")
 
@@ -11,7 +11,7 @@ Default settings of values for User and Group attributes, including starting id�
 
 ### Starting UID
 
-The base UID that should be taken as starting point for all uid assignments
+The starting UID that will be taken as starting point for all uid assignments.
 
 * Default: value should be 1000000
 * Only positive numeric characters can be set
@@ -19,19 +19,19 @@ The base UID that should be taken as starting point for all uid assignments
 
 ### Default Home Directory
 
-Setting of the path that should be used for users when logging into the Linux/Unix host
+The Home Directory Path that be used for users when logging into the Linux/Unix host.
 
 * Default: [systemhome]/[domain]/[username]
 
 ### Default Login Shell
 
-Define the shell you would like assigned to the user when logging into the Linux/Unix host
+The Shell that will be assigned to the user when logging into the Linux/Unix host.
 
-* Default: `/bin/bash`
+* Default: /bin/bash 
 
 ### Check All Domains
 
-This setting forces searches to halt if a domain being searched is offline If this setting is disabled, such domains will be ignored and the search will continue on available domains.
+This setting forces searches to halt if a domain being searched is offline. If this setting is disabled, such domains will be ignored and the search will continue on available domains.
 
 * Check All Domains unchecked by Default
 
@@ -40,43 +40,67 @@ This setting forces searches to halt if a domain being searched is offline If th
 Defines if User POSIX data to be defined by Active Directory before Users are able to login into the Linux/Unix Hosts.
 
 * Default: Automatic
-* Automatic (Default) - If there is no POSIX date on the user in Active Directory (i.e. No UID/GID/Shell/Home Dir), then create the data for the user upon first logon to a Linux/Unix Host.
-* Manual - POSIX data will need to be generated for each User and Group in ADUC before being able to access Linux/Unix Hostsic - Drop down should be present and can be changed.
-* Always - Always generate POSIX data even if already set on user object.
+* Automatic - If there is no POSIX data on the user in Active Directory (i.e. No UID/Shell/Home Dir), then generate POSIX data for the user during authentication.
+* Manual - POSIX data will need to be specified for each User in ADUC before being able to authenticate to Linux/Unix Hosts
+* Always - Always generate POSIX data during authentication, even if POSIX data has been set on user  object
 
-<!--
-#### Duplicate User Mode
+### Duplicate User Processing
 
-* Default: Prepend Automatically
-* Ignore Duplicates - Faster, but may break certain users or provide confusing group lists with the ID command.
-* Duplicates Only - Any duplicate user name found in another domain that is not the domain where the computer is joined.
-* Prepend Automatically
-* Prepend Always
+Defines how Identity Bridge will process Duplicate Active Directory usernames when user logs into the Linux/Unix Hosts.
 
-Example:  `Domain^Users` and `Domain_Admins`, that may need to show up as `Domain\Group^Name` if the user belongs to both.
+* Default: Automatic
+* Never - Ignore Duplicate users
+* Automatic - Generates a unique user name by adding or appending the domain information to the user for all domains except for the joined domain.
+* Only Duplicates - Generates a unique user name by adding or appending the domain information to the user when a duplicate name is detected.
+* Always - Generates a unique user name by adding or appending the domain information to the user for all domains.
 
-#### Duplicate User Format
--->
+### Duplicate User Format
+
+Defines the format for the Active Directory username displayed on the Linux/Unix Host when the Active Directory username is duplicated due to a multi-active Domain environment.
+
+* Default: Domain/User
+* Domain/User - Example: demo/user1
+* User_Domain - Example: user1_demo
+* User@Domain - Example: user1@demo
 
 ## Default Group Settings
 
 ### Starting GID
 
-The starting GID that will be taken as starting point for all gid assignments.
+The starting GID that will be taken as starting point for all GID assignments.
 
-* Default: value should be 1000000.
-* Only positive numeric characters can be set.
-* A maximum of 9 numeric characters can be used.
+* Initial Starting GID: value should be 1000000
+* Only positive numeric characters can be set
+* A maximum of 9 numeric characters can be used
 
 ### POSIX Data for Groups
 
-Defines if Group POSIX data to be defined by Active Directory before Users are able to login into the Linux\Unix Hosts
+Defines if Group POSIX data to be defined by Active Directory before Users are able to login into the Linux/Unix Hosts
 
 * Default: Automatic
-* Automatic (Default) - If there is no POSIX date on the user in Active Directory (i.e. No UID/GID/Shell/Home Dir), then create the data for the user upon first logon to a Linux/Unix Host.
-* Manual - POSIX data will need to be generated for each User and Group in ADUC before being able to access Linux/Unix Hosts.
+* Automatic - If there is no POSIX data on the group in Active Directory (i.e. No GID), then generate POSIX data for the group during authentication.
+* Manual - POSIX data will need to be specified for each Group in ADUC before being able to authenticate to Linux/Unix Hosts.
 * Primary Group Only - Generate GID for users primary group if Primary Group does not have an existing GID.
-* Always - Always generate POSIX data even if already set on group object.
+* Always - Always generate POSIX data during authentication, even if POSIX data has been set on group object.
+
+### Duplicate Group Processing
+
+Defines how Identity Bridge will process Duplicate Active Directory groups with
+users logging into the Linux/Unix Hosts
+
+* Default: Automatic
+* Never - Ignore Duplicate groups
+* Automatic - Generates a unique group name by adding or appending the domain information to the group for all domains except for the joined domain.
+* Only Duplicates - Generates a unique group name by adding or appending the domain information to the group when a duplicate name is detected.
+* Always - Generates a unique group name by adding or appending the domain information to the group for all domains.
+
+### Duplicate Group Format
+
+Defines the format in which the Active Directory group will be displayed on the Linux/Unix Host when the Active Directory username is duplicated due to a multi-active Domain environment.
+
+* Default: Domain/Group
+* Domain/Group - Example: [demo](http://demo.com)/group1
+* Group_Domain - Example: group1_demo
 
 ## Default Computer Settings
 
