@@ -1,6 +1,6 @@
 [title]: # (Friendly Messages)
 [tags]: # (panel)
-[priority]: # (6)
+[priority]: # (7)
 # Friendly Messages
 
 Friendly Message message types can be customized via the Custom Text tab in the configuration utility.

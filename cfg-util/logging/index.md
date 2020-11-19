@@ -1,6 +1,6 @@
 [title]: # (Logging)
 [tags]: # (panel)
-[priority]: # (4)
+[priority]: # (6)
 # Logging
 
 Allows the Linux/Unix host to utilize SysLog functionality, either logging the agent information locally or to a defined remote SysLog server.

@@ -1,6 +1,6 @@
 [title]: # (Password Prompts)
 [tags]: # (panel)
-[priority]: # (5)
+[priority]: # (6)
 # Password Prompts
 
 Password message types can be customized via the Custom Text tab in the configuration utility.

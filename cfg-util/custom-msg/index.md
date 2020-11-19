@@ -1,6 +1,6 @@
 [title]: # (Custom Text)
 [tags]: # (panel)
-[priority]: # (4)
+[priority]: # (6)
 # Custom Text
 
 The Custom Text tab allows custom messages to be defined, that will be displayed to user when accessing the Linux/Unix hosts.
