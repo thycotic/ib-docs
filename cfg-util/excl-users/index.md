@@ -1,13 +1,13 @@
-[title]: # (Excluded Users)
+[title]: # (Exclusions)
 [tags]: # (panel)
 [priority]: # (6)
-# Excluded Users
+# Exclusions
 
 Allows to provide a list of local and domain user accounts that will automatically bypass the Identity Bridge portion of the authentication stack. This excludes the domain the configuration utility is connected to.
 
 Groups are masked from the list. It's possible to define individual or ranges of UIDs and GIDs to be excluded.
 
-![excluded users](../images/excl-users.png "Excluded Users tab of the Bridge Configuration tool")
+![exclusions](../images/excl-users.png "Exclusions tab of the Bridge Configuration tool")
 
 ## User and/or Group Exclusions
 
