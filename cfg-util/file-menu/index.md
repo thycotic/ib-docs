@@ -1,6 +1,6 @@
 [title]: # (File Menu)
 [tags]: # (panel)
-[priority]: # (5)
+[priority]: # (6)
 # File Menu - Import/Export Backup
 
 The Thycotic Identity Bridge Configuration Utility provides the ability to Export and Import all settings from the Configuration Utility via a backup file (.IBBAK).
@@ -11,7 +11,10 @@ The functionality can be accessed view the File Menu and the menu items are __Ex
 
 ## Export Backup
 
-Opens a modal to provide a location and name for the settings to be exported to. Any applied licenses will not be included in the export.
+Opens a modal to provide a location and name for the settings to be exported to.
+
+* Any applied licenses will not be included in the export.
+* Any accounts defined in the Service Accounts Panel will not be exported.
 
 ## Import Backup
 
