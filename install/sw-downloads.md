@@ -5,6 +5,8 @@
 
 This page provides links to Thycotic Identity Bridge product software downloads.
 
+>**Note**: Only general availability releases are fully supported for usage with Thycotic's Identity Bridge.
+
 ## Thycotic Identity Bridge V1.0.1
 
 | OS | Flavor | Version | Product |
