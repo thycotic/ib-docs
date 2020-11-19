@@ -1,13 +1,13 @@
-[title]: # (Excluded Users)
+[title]: # (Exclusions)
 [tags]: # (panel)
 [priority]: # (6)
-# Excluded Users
+# Exclusions
 
 Allows to provide a list of local and domain user accounts that will automatically bypass the Identity Bridge portion of the authentication stack. This excludes the domain the configuration utility is connected to.
 
 Groups are masked from the list. It's possible to define individual or ranges of UIDs and GIDs to be excluded.
 
-![excluded users](../images/excl-users.png "Excluded Users tab of the Bridge Configuration tool")
+![exclusions](../images/excl-users.png "Exclusions tab of the Bridge Configuration tool")
 
 ## User and/or Group Exclusions
 
@@ -36,15 +36,13 @@ Users will automatically bypass the Identity Bridge portion of the authenticatio
 
 UID value/range will be excluded as an applicable value as UID Number in the Thycotic User Data extension of ADUC.
 
-* UID numbers can be defined as a single value, comma separated list or range of values
-* Default: 0 - 500
+* UID numbers can be defined as a single value, comma separated list or range of values.
 
 ### GID(s) Number
 
 GID value/range will be excluded as an applicable value as UID Number in the Thycotic User Data, Thycotic Group Data and Thycotic Overrides extensions of ADUC.
 
-* GID numbers can be defined as a single value, comma separated list or range of values
-* Default: 0 - 500
+* GID numbers can be defined as a single value, comma separated list or range of values.
 
 ### Domain
 

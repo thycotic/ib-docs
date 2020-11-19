@@ -33,7 +33,7 @@ Sets the amount of time the local Linux/Unix agent will store a copy of the user
 
 Allows the ID Bridge user to configure the custom attribute macros for use within the Default User & Group Settings.
 
-## [Excluded Users](excl-users/index.md)
+## [Exclusions](excl-users/index.md)
 
 Provide a list of local user accounts that will automatically bypass the Identity Bridge portion of the authentication stack.
 
