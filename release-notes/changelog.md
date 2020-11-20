@@ -14,6 +14,7 @@ Changes in support of the Identity Bridge 1.1.0 feature release.
 * Backup support via ex- and imports options on the [File Menu](../cfg-util/file-menu/index.md).
 * Added [DC Selector](../cfg-util/dc-selector.md).
 * [User/Group support](../cfg-util/general/index.md) for multi-domain environments.
+* [Service Accounts](../cfg-util/service-accts/index.md) support. 
 * The Primary Group configuration option was removed from the Configuration Utility and MMC extension.
 
 ## October 2020

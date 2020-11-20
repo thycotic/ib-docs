@@ -14,6 +14,7 @@ Enhancements available with the 1.1.0 release of Identity Bridge.
 * Full Configuration Utility backup support via ex- and imports options on the [File Menu](../cfg-util/file-menu/index.md).
 * Added [DC Selector](../cfg-util/dc-selector.md) option to Configuration Utility.
 * [User/Group support](../cfg-util/general/index.md) for multi-domain environments.
+* Added [Service Accounts](../cfg-util/service-accts/index.md) support to the Configuration Utility. 
 * The Primary Group configuration option was removed from the Configuration Utility and MMC extension.
 
 ## Bug Fixes
