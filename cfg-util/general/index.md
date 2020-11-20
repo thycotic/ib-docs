@@ -75,7 +75,7 @@ The starting GID that will be taken as starting point for all GID assignments.
 
 ### POSIX Data for Groups
 
-Defines if Group POSIX data to be defined by Active Directory before Users are able to login into the Linux/Unix Hosts
+Defines if Group POSIX data to be defined by Active Directory before Users are able to login into the Linux/Unix Hosts.
 
 * Default: Automatic
 * Automatic - If there is no POSIX data on the group in Active Directory (i.e. No GID), then generate POSIX data for the group during authentication.
