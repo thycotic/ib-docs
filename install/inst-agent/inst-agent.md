@@ -38,7 +38,9 @@ For CentOS, RedHat, and Oracle there are 2 methods for installing packages, rpm 
 
 Performed as non root user with sudo permissions:
 
-`>> sudo rpm -i /root/Thycotic/pmagent_x86_64_v1.0.0.rpm`
+`>> sudo rpm -i /root/Thycotic/pmagent_x86_64_vn.n.n.rpm`
+
+Where, pmagent_x86_64_vn.n.n.rpm is replaced with the actual software package and version that is being installed.
 
 Below is the expected output of a successful installation
 
@@ -60,16 +62,18 @@ Please disable SELinux to allow the Identity Bridge to function properly
 
 Performed as non root user with sudo permissions:
 
-`>> sudo yum install /root/Thycotic/pmagent_x86_64_v1.0.0.rpm`
+`>> sudo yum install /root/Thycotic/pmagent_x86_64_vn.n.n.rpm`
+
+Where, pmagent_x86_64_vn.n.n.rpm is replaced with the actual software package and version that is being installed.
 
 ```
 Below is the expected output of a successful installation
 Loaded plugins: fastestmirror, langpacks
-Examining pmagent_x86_64_v1.0.0.rpm:  pmagent_x86_64_1.0.0.1
-Marking pmagent_x86_64_v1.0.0.rpm to be installed
+Examining pmagent_x86_64_v1.1.0.rpm:  pmagent_x86_64_1.1.0.0
+Marking pmagent_x86_64_v1.1.0.rpm to be installed
 Resolving Dependencies
 --> Running transaction check
----> Package pmagent.x86_64 0:1.0.0-1 will be installed
+---> Package pmagent.x86_64 0:1.1.0-0 will be installed
 --> Finished Dependency Resolution
 
 Dependencies Resolved
@@ -81,7 +85,7 @@ Package         Arch         Version         Repository                  Size
 ==============================================================================
 Installing:
 
-pmagent         x86_64        1.0.0-1        /pmagent_x86_64_v1.0.0       50 M
+pmagent         x86_64        1.1.0-0        /pmagent_x86_64_v1.1.0       50 M
 
 Transaction Summary
 ==============================================================================
@@ -94,7 +98,7 @@ Running transaction check
 Running transaction test
 Transaction test succeeded
 Running transaction
-  Installing : pmagent_x86_64_1.0.0.1 1/1
+  Installing : pmagent_x86_64_1.1.0.0 1/1
 Created symlink from /etc/systemd/system/multi-user.target.wants/pmagent.service to /etc/systemd/system/pmagent.service.
 
 Please start the pmagent service by running:
@@ -103,10 +107,10 @@ Please start the pmagent service by running:
 You need to join an Active Directory domain to start authenticating users using the command:
   /opt/thycotic/sbin/pmagent --join
 
-Verifying : pmagent_x86_64_1.0.0.1 1/1
+Verifying : pmagent_x86_64_1.1.0.0 1/1
 
 Installed:
-pmagent_x86_64_1.0.0.1
+pmagent_x86_64_1.1.0.0
 Complete!
 ```
 
