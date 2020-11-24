@@ -23,3 +23,4 @@ Enhancements available with the 1.1.0 release of Identity Bridge.
 * Changes to the Thycotic Configuration Utility > Custom Text > Friendly Messages > Account Expired filed are now being correctly applied.
 * User Properties - Thycotic User Data Panel - Auto population of fields corrected when using Automatic POSIX data generation.
 * Reduced number of PreAuth calls made to Active Directory when users authenticating against locally cached information.
+* When duplicate users exist across Parent/Child domain environments, entering the domain with the username now correctly accesses the correct user information.
