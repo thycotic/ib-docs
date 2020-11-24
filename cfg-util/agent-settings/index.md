@@ -1,6 +1,6 @@
 [title]: # (Agent Settings)
 [tags]: # (panel)
-[priority]: # (4)
+[priority]: # (6)
 # Agent Settings
 
 Interface with Linux/Unix agents to manage user account locally defined on the agents.

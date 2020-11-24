@@ -1,6 +1,6 @@
 [title]: # (Attribute Mapping)
 [tags]: # (panel)
-[priority]: # (4)
+[priority]: # (6)
 # Attribute Mapping
 
 Provide the ability to directly map existing Active Directory fields to Thycotic ID Bridge fields.

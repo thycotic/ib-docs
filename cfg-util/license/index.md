@@ -1,6 +1,6 @@
 [title]: # (Licensing)
 [tags]: # (panel)
-[priority]: # (4)
+[priority]: # (6)
 # Licensing
 
 Licensing Panel to view, add, and remove Thycotic Identity Bridge Licenses.

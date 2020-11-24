@@ -1,6 +1,6 @@
 [title]: # (Customer Variables)
 [tags]: # (panel)
-[priority]: # (4)
+[priority]: # (6)
 # Customer Variables
 
 Use this tab to configure the custom attribute macros for use within the Default User & Group Settings. Please note that these settings are global to the entire enterprise.
