@@ -1,6 +1,6 @@
 [title]: # (DC Selector)
 [tags]: # (domain controller)
-[priority]: # (5)
+[priority]: # (10)
 # Domain Controller Selector
 
 When the Configuration Utility is opened, it connects to the nearest Domain Controller according to the environmental setup in Active Directory Sites and Services.
