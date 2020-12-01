@@ -38,9 +38,10 @@ Allows filtering of exiting ACLs defined in the display panel
 
 Displays that ACL combinations of Users and Hosts defined at a Global level.
 
-* Once an ACL has been defined all access must abide by ACL rules
-* By default when an ACL is added permission for the ACL is enabled
-* Denied - When selected login access to the user host combination will be denied
+* Once an ACL has been defined all access must abide by ACL rules.
+* By default when an ACL is added permission for the ACL is enabled.
+* Denied - When selected login access to the user host combination will be denied.
+* Expand - When selected will display nested groups in the ACL report on the Unix/Linux Hosts.
 
 #### Test Access of User/Computer
 

@@ -5,6 +5,13 @@
 
 This topic provides a chronological list of documentation changes. Minor content alterations are not tracked.
 
+## December 2020
+
+Added information to:
+
+* [Access Control List tab](../cfg-util/acl/index.md#panel).
+* [Agent Settings tab](../cfg-util/agent-settings/index.md).
+
 ## November 2020
 
 Changes in support of the Identity Bridge 1.1.0 feature release.
