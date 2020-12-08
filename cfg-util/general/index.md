@@ -29,12 +29,6 @@ The Shell that will be assigned to the user when logging into the Linux/Unix hos
 
 * Default: /bin/bash 
 
-### Check All Domains
-
-This setting forces searches to halt if a domain being searched is offline. If this setting is disabled, such domains will be ignored and the search will continue on available domains.
-
-* Check All Domains unchecked by Default
-
 ### POSIX Data for Users
 
 Defines if User POSIX data to be defined by Active Directory before Users are able to login into the Linux/Unix Hosts.
@@ -43,25 +37,6 @@ Defines if User POSIX data to be defined by Active Directory before Users are ab
 * Automatic - If there is no POSIX data on the user in Active Directory (i.e. No UID/Shell/Home Dir), then generate POSIX data for the user during authentication.
 * Manual - POSIX data will need to be specified for each User in ADUC before being able to authenticate to Linux/Unix Hosts
 * Always - Always generate POSIX data during authentication, even if POSIX data has been set on user  object
-
-### Duplicate User Processing
-
-Defines how Identity Bridge will process Duplicate Active Directory usernames when user logs into the Linux/Unix Hosts.
-
-* Default: Automatic
-* Never - Ignore Duplicate users
-* Automatic - Generates a unique user name by adding or appending the domain information to the user for all domains except for the joined domain.
-* Only Duplicates - Generates a unique user name by adding or appending the domain information to the user when a duplicate name is detected.
-* Always - Generates a unique user name by adding or appending the domain information to the user for all domains.
-
-### Duplicate User Format
-
-Defines the format for the Active Directory username displayed on the Linux/Unix Host when the Active Directory username is duplicated due to a multi-active Domain environment.
-
-* Default: Domain/User
-* Domain/User - Example: demo/user1
-* User_Domain - Example: user1_demo
-* User@Domain - Example: user1@demo
 
 ## Default Group Settings
 
@@ -82,25 +57,6 @@ Defines if Group POSIX data to be defined by Active Directory before Users are a
 * Manual - POSIX data will need to be specified for each Group in ADUC before being able to authenticate to Linux/Unix Hosts.
 * Primary Group Only - Generate GID for users primary group if Primary Group does not have an existing GID.
 * Always - Always generate POSIX data during authentication, even if POSIX data has been set on group object.
-
-### Duplicate Group Processing
-
-Defines how Identity Bridge will process Duplicate Active Directory groups with
-users logging into the Linux/Unix Hosts
-
-* Default: Automatic
-* Never - Ignore Duplicate groups
-* Automatic - Generates a unique group name by adding or appending the domain information to the group for all domains except for the joined domain.
-* Only Duplicates - Generates a unique group name by adding or appending the domain information to the group when a duplicate name is detected.
-* Always - Generates a unique group name by adding or appending the domain information to the group for all domains.
-
-### Duplicate Group Format
-
-Defines the format in which the Active Directory group will be displayed on the Linux/Unix Host when the Active Directory username is duplicated due to a multi-active Domain environment.
-
-* Default: Domain/Group
-* Domain/Group - Example: [demo](http://demo.com)/group1
-* Group_Domain - Example: group1_demo
 
 ## Default Computer Settings
 
