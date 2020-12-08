@@ -3,7 +3,7 @@
 [priority]: # (6)
 # Agent Settings
 
-Interface with Unix/Linux agents to manage user account locally defined on the agents.
+Interface with Unix/Linux agents to manage settings that are passed to each agent.
 
 ![agent settings](../images/agent-settings.png "Agent Settings tab of the Bridge Configuration tool")
 
@@ -54,10 +54,3 @@ Defines the format in which the UID and GID will be generate starting from the d
 * Incremental – Will select the next ID available ID for user or group starting from the defined id
   * If a value has been previously assigned and removed it will not be added back to the available pool
 * Default: Algorithmic
-
-## Separator Characters
-
-Replacement character for names with spaces
-Defines how spaces in User and Group names will be displayed on the Unix/Linux hosts
-
-* Default: __^__
