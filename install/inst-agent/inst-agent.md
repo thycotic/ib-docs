@@ -69,11 +69,11 @@ Where, pmagent_x86_64_vn.n.n.rpm is replaced with the actual software package an
 ```
 Below is the expected output of a successful installation
 Loaded plugins: fastestmirror, langpacks
-Examining pmagent_x86_64_v1.1.0.rpm:  pmagent_x86_64_1.1.0.0
-Marking pmagent_x86_64_v1.1.0.rpm to be installed
+Examining pmagent_x86_64_v1.1.1.rpm:  pmagent_x86_64_1.1.16
+Marking pmagent_x86_64_v1.1.1.rpm to be installed
 Resolving Dependencies
 --> Running transaction check
----> Package pmagent.x86_64 0:1.1.0-0 will be installed
+---> Package pmagent.x86_64 0:1.1.16 will be installed
 --> Finished Dependency Resolution
 
 Dependencies Resolved
@@ -85,7 +85,7 @@ Package         Arch         Version         Repository                  Size
 ==============================================================================
 Installing:
 
-pmagent         x86_64        1.1.0-0        /pmagent_x86_64_v1.1.0       50 M
+pmagent         x86_64        1.1.16        /pmagent_x86_64_v1.1.1       50 M
 
 Transaction Summary
 ==============================================================================
@@ -98,7 +98,7 @@ Running transaction check
 Running transaction test
 Transaction test succeeded
 Running transaction
-  Installing : pmagent_x86_64_1.1.0.0 1/1
+  Installing : pmagent_x86_64_1.1.16 1/1
 Created symlink from /etc/systemd/system/multi-user.target.wants/pmagent.service to /etc/systemd/system/pmagent.service.
 
 Please start the pmagent service by running:
@@ -107,10 +107,10 @@ Please start the pmagent service by running:
 You need to join an Active Directory domain to start authenticating users using the command:
   /opt/thycotic/sbin/pmagent --join
 
-Verifying : pmagent_x86_64_1.1.0.0 1/1
+Verifying : pmagent_x86_64_1.1.16 1/1
 
 Installed:
-pmagent_x86_64_1.1.0.0
+pmagent_x86_64_1.1.16
 Complete!
 ```
 

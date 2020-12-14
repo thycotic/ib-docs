@@ -53,6 +53,10 @@ Allows custom messages to be defined. The messages are displayed to user when ac
 
 Shows an overview of where all Thycotic Identity Bridge configuration objects are stored in Active Directory.
 
+## [User/Group Naming](user-group/index.md)
+
+Used to configure how Users and Groups are displayed.
+
 ## [File Menu](file-menu/index.md)
 
 The [File Menu](file-menu/index.md) of the configuration utility offers options like:
