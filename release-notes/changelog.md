@@ -5,6 +5,10 @@
 
 This topic provides a chronological list of documentation changes. Minor content alterations are not tracked.
 
+## January 2021
+
+* Added [About](../cfg-util/index.md#help_menu)
+
 ## December 2020
 
 Added information to:

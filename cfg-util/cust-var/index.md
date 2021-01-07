@@ -1,16 +1,16 @@
-[title]: # (Customer Variables)
+[title]: # (Custom Variables)
 [tags]: # (panel)
 [priority]: # (6)
-# Customer Variables
+# Custom Variables
 
-Use this tab to configure the custom attribute macros for use within the Default User & Group Settings. Please note that these settings are global to the entire enterprise.
+Use this tab to configure the custom attribute variables for use within the Default User & Group Settings. Please note that these settings are global to the entire enterprise.
 
-![customer variables](../images/cust-var.png "Customer Variables tab of the Bridge Configuration tool")
+![custom variables](../images/cust-var.png "Custom Variables tab of the Bridge Configuration tool")
 
 ## Add Variable
 
-Adds a new line to the panel and allows you to define a Macro name and then select from a list of Active Directory attributes and define a single attribute mapping per Macro.
+Adds a new line to the panel and allows you to define a variable name and then select from a list of Active Directory attributes and define a single attribute mapping per variable.
 
 ## Defaults
 
-A number of predefined default Macros have been added by Thycotic, these are also used in the Messages panel.
+A number of predefined default variables have been added by Thycotic, these are also used in the Messages panel.
