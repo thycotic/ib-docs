@@ -29,9 +29,9 @@ Allow Active directory values to be mapped to Thycotic ID Bridge fields. For exa
 
 Sets the amount of time the local Linux/Unix agent will store a copy of the users password within the agent's encrypted database. This is required in the event the Agent is unable to contact AD to verify the users credentials.
 
-## [Customer Variables](cust-var/index.md)
+## [Custom Variables](cust-var/index.md)
 
-Allows the ID Bridge user to configure the custom attribute macros for use within the Default User & Group Settings.
+Allows the ID Bridge user to configure the custom attribute variables for use within the Default User & Group Settings.
 
 ## [Exclusions](excl-users/index.md)
 
@@ -68,3 +68,9 @@ The [File Menu](file-menu/index.md) of the configuration utility offers options 
 * Go to Global Configuration: If user is not already in the global configuration selecting this option navigates to it.
 * [Export Backup](file-menu/index.md#export_backup)
 * [Import Backup](file-menu/index.md#import_backup)
+
+## Help Menu
+
+To view information about component versions of the Thycotic Identity Bridge, navigate to __Help__ and select __About__.
+
+![about](images/about.png "About modal")
