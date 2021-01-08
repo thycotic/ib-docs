@@ -9,5 +9,5 @@ The following options are available:
 
 * [Password Prompts](pw-prompts.md)
 * [Friendly Messages](friendly-msg.md)
-* [Warning Messages](warn-msg.md)
+* [Warning Messages](warning-msg.md)
 * [Access Control Messages](ac-msg.md)

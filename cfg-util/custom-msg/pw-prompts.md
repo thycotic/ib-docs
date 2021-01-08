@@ -7,7 +7,7 @@ Password message types can be customized via the Custom Text tab in the configur
 
 Select Password Prompts from the drop-down options.
 
-![pwp](../images/pw-prompts.png "Custom Text tab in Configuration tool with Password Prompts selected")
+![pwp](images/pw-prompts.png "Custom Text tab in Configuration tool with Password Prompts selected")
 
 >**Note**: Custom Variables cannot be used in the message fields.
 
