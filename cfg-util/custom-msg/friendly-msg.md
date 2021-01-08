@@ -7,7 +7,7 @@ Friendly Message message types can be customized via the Custom Text tab in the 
 
 Select Friendly Messages from the drop-down options.
 
-![friendly](../images/friendly-msg.png "Custom Text tab in Configuration tool with Friendly Messages selected")
+![friendly](images/friendly-msg.png "Custom Text tab in Configuration tool with Friendly Messages selected")
 
 ## Welcome Message
 

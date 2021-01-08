@@ -7,7 +7,7 @@ Warning Messages message types can be customized via the Custom Text tab in the 
 
 Select Warning Messages from the drop-down options.
 
-![warn](../images/warn-msg.png "Custom Text tab in Configuration tool with Warning Messages selected")
+![warn](images/warn-msg.png "Custom Text tab in Configuration tool with Warning Messages selected")
 
 Messages displayed to all Active Directory users when configuration discrepancies occur.
 
