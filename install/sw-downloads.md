@@ -10,7 +10,7 @@ This page provides links to Thycotic Identity Bridge product software downloads.
 > * Only general availability releases are fully supported for usage with Thycotic's Identity Bridge.
 > * The Identity Bridge Configuration Utility software and Agent software versions need to match to work correctly.
 
-## Thycotic Identity Bridge V1.1.1
+## Thycotic Identity Bridge V1.1.2
 
 | OS | Flavor | Version | Product |
 | ----- | ----- | ----- | ----- |
