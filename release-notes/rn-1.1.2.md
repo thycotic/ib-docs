@@ -16,3 +16,4 @@ Enhancements available with the 1.1.2 release of Identity Bridge.
 * Fix to improve local AD group caching in API.
 * Group checking performance fix.
 * Improvement to Group expansion for users defined in ACL.
+* Clean Install of Configuration Utility/Removal of Thycotic Folder in ADSI Edit causes a Configuration Utility login error.
