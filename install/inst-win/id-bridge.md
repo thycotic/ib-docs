@@ -23,7 +23,7 @@ The executable for the Identity Bride installation on Windows systems, checks fo
 
    ![id 5](images/id-5.png "Configure Active Directory dialog")
 
-   * Check the Install Thycotic Indentity Bridge Property Sheets checkbox.
+   * Check the Install Thycotic Identity Bridge Property Sheets checkbox.
    * If you are logged in as the default user (Administrator), ignore the specific user detail setup.
    * Click __Configure AD__.
 1. A successful AD Configuration is confirmed:
