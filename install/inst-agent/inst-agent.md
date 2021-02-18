@@ -36,7 +36,11 @@ For CentOS, RedHat, and Oracle there are 2 methods for installing packages, rpm 
 
 ## RPM
 
-Performed as non root user with sudo permissions:
+For upgrades to version 1.1.3 only, as mentioned in the [Release Notes](../../release-notes/rn-1.1.3.md) under Known Issues, run this upgrade command:
+
+`rpm -U --force ./pmagent_x86_64_v1.1.3.xx_<platform>.rpm`
+
+For new installations only, performed as non root user with sudo permissions:
 
 `>> sudo rpm -i /root/Thycotic/pmagent_x86_64_vn.n.n.rpm`
 
@@ -60,7 +64,11 @@ Please disable SELinux to allow the Identity Bridge to function properly
 
 ## YUM
 
-Performed as non root user with sudo permissions:
+For upgrades to version 1.1.3 only, as mentioned in the [Release Notes](../../release-notes/rn-1.1.3.md) under Known Issues, run this downgrade command:
+
+`yum downgrade ./pmagent_x86_64_v1.1.3.xx_<platform>.rpm`
+
+For new installations only, performed as non root user with sudo permissions:
 
 `>> sudo yum install /root/Thycotic/pmagent_x86_64_vn.n.n.rpm`
 

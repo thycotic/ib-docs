@@ -5,14 +5,20 @@
 
 This topic provides a chronological list of documentation changes. Minor content alterations are not tracked.
 
+## February 2021
+
+* Added version [1.1.3 Release Notes](rn-1.1.3.md), including a known issue pertaining to upgrades on CentOS, Redhat Enterprise and Oracle Linux endpoints only.
+
 ## January 2021
 
+* Added version [1.1.2 Release Notes](rn-1.1.2.md)
 * Added [About](../cfg-util/index.md#help_menu)
 
 ## December 2020
 
 Added information to:
 
+* Added version [1.1.1 Release Notes](rn-1.1.1.md)
 * [Access Control List tab](../cfg-util/acl/index.md#panel).
 * [Agent Settings tab](../cfg-util/agent-settings/index.md).
 
