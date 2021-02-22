@@ -30,16 +30,16 @@ There are 2 methods for installing packages, DPKG and APT, both methods are outl
 
 Performed as non root user with sudo permissions
 
-`>> sudo dpkg -i pmagent-1.1.26-Linux.deb`
+`>> sudo dpkg -i pmagent-1.1.3.79-Linux.deb`
 
 Below is the expected output of a successful installation
 
 ```
 Selecting previously unselected package pmagent.
 (Reading database ... 184828 files and directories currently installed.)
-Preparing to unpack pmagent-1.1.26-Linux.deb ...
-Unpacking pmagent (1.1.26) ...
-Setting up pmagent (1.1.26) ...
+Preparing to unpack pmagent-1.1.3.79-Linux.deb ...
+Unpacking pmagent (1.1.3.79) ...
+Setting up pmagent (1.1.3.79) ...
 Created symlink /etc/systemd/system/multi-user.target.wants/pmagent.service → /etc/systemd/system/pmagent.service.
 
 Please start the pmagent service by running:
@@ -54,7 +54,7 @@ using the command:
 
 Performed as non root user with sudo permissions
 
-`>> sudo apt install /root/Thycotic/pmagent-1.1.26-Linux.deb`
+`>> sudo apt install /root/Thycotic/pmagent-1.1.3.79-Linux.deb`
 
 Below is the expected output of a successful installation
 
@@ -62,7 +62,7 @@ Below is the expected output of a successful installation
 Reading package lists... Done
 Building dependency tree
 Reading state information... Done
-Note, selecting 'pmagent' instead of '/home/installer/pmagent-1.1.26-Linux.deb'
+Note, selecting 'pmagent' instead of '/home/installer/pmagent-1.1.3.79-Linux.deb'
 The following packages were automatically installed and are no longer required:
   linux-hwe-5.4-headers-5.4.0-42 tcpd
 Use 'sudo apt autoremove' to remove them.
@@ -71,12 +71,12 @@ The following NEW packages will be installed
 0 to upgrade, 1 to newly install, 0 to remove and 92 not to upgrade.
 Need to get 0 B/8,669 kB of archives.
 After this operation, 28.5 MB of additional disk space will be used.
-Get:1 /home/installer/pmagent-1.1.26-Linux.deb pmagent amd64 1.1.26 [8,669 kB]
+Get:1 /home/installer/pmagent-1.1.3.79-Linux.deb pmagent amd64 1.1.3.79 [8,669 kB]
 Selecting previously unselected package pmagent.
 (Reading database ... 184828 files and directories currently installed.)
-Preparing to unpack .../pmagent-1.1.26-Linux.deb ...
-Unpacking pmagent (1.1.26) ...
-Setting up pmagent (1.1.26) ...
+Preparing to unpack .../pmagent-1.1.3.79-Linux.deb ...
+Unpacking pmagent (1.1.3.79) ...
+Setting up pmagent (1.1.3.79) ...
 Created symlink /etc/systemd/system/multi-user.target.wants/pmagent.service → /etc/systemd/system/pmagent.service.
 
 Please start the pmagent service by running:
